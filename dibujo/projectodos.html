@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Abecedario</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/p5.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/addons/p5.dom.min.js"></script>
+  <style>
+    html,
+    body {
+      margin: 0;
+      padding: 0;
+    }
+    canvas {
+      display: block;
+      margin: 0px auto;
+    }
+  </style>
+</head>
+
+<body>
+
+</body>
+
+</html>
+
+<script type="text/javascript">
+let rectWidth;
+
+function setup() {
+  createCanvas(720, 400);
+  noStroke();
+  background(230);
+  rectWidth = width / 4;
+}
+
+function draw() {
+}
+
+
+function keyPressed() {
+  // let keyIndex = -1;
+  // if (key >= 'a' && key <= 'z') {
+  //   keyIndex = key.charCodeAt(0) - 'a'.charCodeAt(0);
+  // }
+  // if (keyIndex === -1) {
+  //   background(230);
+  // } else {
+  //   randFill_r = Math.floor(Math.random() * 255 + 1);
+  //   randFill_g = Math.floor(Math.random() * 255 + 1);
+  //   randFill_b = Math.floor(Math.random() * 255 + 1);
+  //   fill(randFill_r, randFill_g, randFill_b);
+  //   let x = map(keyIndex, 0, 25, 0, width - rectWidth);
+  //   rect(x, 0, rectWidth, height);
+  // }
+  if(key >= 'a' && key <= 'z') {
+        
+      r = random(255);
+      g = random(255);
+      b = random(255);
+      background(r,g,b);
+}
+}
+
+</script>

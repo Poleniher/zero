@@ -1,0 +1,70 @@
+<style>
+    .instructions{
+        text-align: center;
+        width: 400px;
+        margin:0 auto;
+    }
+</style>
+
+
+<script type="text/javascript">
+    let r,g,b;
+    function setup() {
+      createCanvas(710, 400);
+      r = random(255);
+      g = random(255);
+      b = random(255);
+      background(r,g,b);
+  }
+
+  function draw() {
+      stroke(255);
+      if (mouseIsPressed === true) {
+        line(mouseX, mouseY, pmouseX, pmouseY);
+    }
+}
+
+function keyPressed() {
+    if(key == 'a') {
+        
+      r = random(255);
+      g = random(255);
+      b = random(255);
+      background(r,g,b);
+}
+}
+
+</script>
+
+
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Random Canvas</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/p5.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/addons/p5.dom.min.js"></script>
+  <style>
+    html,
+    body {
+      margin: 0;
+      padding: 0;
+    }
+    canvas {
+      display: block;
+      margin: 0px auto;
+    }
+  </style>
+</head>
+
+<body>
+    <div class="instructions">
+    <h3>Seleciona 'a' para un fondo nuevo</h3>
+    <p>fdjahfkldjashfdkljsahf</p>
+    </div>
+</body>
+
+</html>

@@ -1,4 +1,4 @@
-// Ejemplo número 1: Este es un comentario
+ // Ejemplo número 1: Este es un comentario
 
 /*
 comentario
