@@ -15,14 +15,39 @@
       margin: 0;
       padding: 0;
     }
+
+    #info{
+      width: 12%;
+      float: left;
+      text-align: right;
+      padding-top:180px;
+      padding-left: 90px;
+
+
+    }
     canvas {
       display: block;
       margin: 0px auto;
+      float: right;
+
     }
   </style>
 </head>
 
 <body>
+  <div id="info">
+    <p>
+      <h3><strong>el arte de programar</strong></h3>
+      Entender el codigo como una manera de diseñar<br>
+      que al igual que cualquier obra, contiene cierta<br>
+      lógica en su composición global. Aqui la composición <br>
+      está oculta entre letras, como los símbolos en las palabras<br>
+      como los pigmentos del acrilico en la pintura.
+    </p>
+
+
+
+   </div>
 
 </body>
 
@@ -35,7 +60,7 @@ let y=0;
 let spacing= 100;
 
 function setup() {
-  createCanvas(800, 800);
+  createCanvas(1200, 755);
 
   r = random(255);
   g = random(255);
@@ -61,6 +86,7 @@ function draw() {
     line (x,y,x+spacing,y+spacing);
   } else{
       line (x,y+100,x+100,y);
+      stroke(0)
 
   }
 x=x+spacing
