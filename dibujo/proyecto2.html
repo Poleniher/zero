@@ -11,6 +11,7 @@
   <style>
     html,
     body {
+
       margin: 0;
       padding: 0;
     }
@@ -29,26 +30,47 @@
 
 <script type="text/javascript">
 let rectWidth;
+let x=0;
+let y=0;
+let spacing= 100;
 
 function setup() {
-  createCanvas(720, 400);
-  noStroke();
-  background(230);
-  rectWidth = width / 4;
-}
+  createCanvas(800, 800);
 
-function draw() {
+  r = random(255);
+  g = random(255);
+  b = random(255);
+  background(r,g,b);
+  rectWidth = width / 4;
 }
 
 
 function keyPressed() {
-  if(key >= 'b' && key <= 'z') {
-
+  if(key >= 'a' && key <= 'z') {
       r = random(255);
       g = random(255);
       b = random(255);
-      background(r,g,b);
+     background(r,g,b);
+    }
 }
+
+function draw() {
+  stroke(255)
+
+  if(random(1)<0.5){
+    ellipse(x,y,20,20);
+    line (x,y,x+spacing,y+spacing);
+  } else{
+      line (x,y+100,x+100,y);
+
+  }
+x=x+spacing
+if (x>width){
+  x=0;
+  y=y+spacing;
 }
+
+}
+
 
 </script>

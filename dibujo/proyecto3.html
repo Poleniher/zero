@@ -1,8 +1,7 @@
-
 <script type="text/javascript">
     let r,g,b;
     function setup() {
-      createCanvas(710, 400);
+      createCanvas(710, 710);
       r = random(255);
       g = random(255);
       b = random(255);
@@ -13,6 +12,8 @@
       stroke(255);
       if (mouseIsPressed === true) {
         line(mouseX, mouseY, pmouseX, pmouseY);
+
+
     }
 }
 
@@ -27,3 +28,33 @@ function keyPressed() {
 }
 
 </script>
+
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Abecedario</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/p5.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/addons/p5.dom.min.js"></script>
+  <style>
+    html,
+    body {
+
+      margin: 0;
+      padding: 0;
+    }
+    canvas {
+      display: block;
+      margin: 0px auto;
+    }
+  </style>
+</head>
+
+<body>
+
+</body>
+
+</html>
